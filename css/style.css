@@ -1,3 +1,129 @@
-img{
-    width: 150px;
+html{
+    margin: 0; padding: 0;
+}
+
+body{
+    margin: 0; font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin: 0; padding: 0;
+}
+
+a{
+    text-decoration: none; color: white;
+}
+
+header{
+    text-align: center;
+}
+
+#logo{
+    width: 50%; padding: 10px 0;
+}
+
+section{
+    display: flex; flex-direction: column; align-items: center;
+}
+
+#localisation{
+    width: 100%; padding: 15px 0; text-align: center; background-color: #eaeaea;
+}
+
+#localisation i{
+    margin-right: 15px;
+}
+
+#intro{
+    display: flex; flex-direction: column; align-items: center; background-color: #F2F2F2;
+    padding: 10px 0 30px 0; width: 100%;
+}
+
+#intro h1{
+    width: 70%; text-align: center; margin-bottom: 10px;
+}
+
+#intro p{
+    width: 80%; text-align: center; margin-top: 0;
+}
+
+#intro span{
+    margin: 20px 0;
+}
+
+#intro a{
+    padding: 15px 20px; font-weight: bold; font-size: 14px;
+    background-image: linear-gradient(#FF79DA, #ab5ddb); border-radius: 30px;
+}
+
+#fonction{
+    padding: 30px 0;
+}
+
+#menus{
+    padding-bottom: 30px; background-color: #F2F2F2;
+}
+
+#menus h3{
+    width: 80%;
+}
+
+.menu{
+    width: 90%; display: flex; justify-content: center; margin: 0; position: relative; margin-bottom: 20px;
+}
+
+.new{
+    position: absolute; right: 15px; top: 15px;
+    background-color: #99E2D0; padding: 7px 15px; border-radius: 2px;
+}
+
+figure{
+    width: 100%; display: flex; flex-direction: column; margin: 0;
+    box-shadow: 1px 1px 10px #aaa; border-radius: 15px;
+}
+
+figure img{
+    height: 220px; width: auto; object-fit: cover; border-radius: 15px 15px 0 0;
+}
+
+figcaption{
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 15px; position: relative;
+}
+
+.fav{
+    font-size: 20px; position: absolute; right: 20px; top: 20px;
+}
+
+.nom_resto{
+    font-weight: bold; margin-bottom: 0;
+}
+
+.lieu_resto{
+    margin-top: 5px;
+}
+
+footer{
+    background-color: #353535; color: white; width: 100%; display: flex; flex-direction: column;
+    align-items: center; padding: 20px 0;
+}
+
+footer div{
+    width: 90%; 
+}
+
+footer h4{
+    margin: 0;
+}
+
+footer ul{
+    margin: 0; padding: 0;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer i{
+    margin-right: 10px; font-size: 10px;
 }
