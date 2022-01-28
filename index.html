@@ -1,21 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.scss">
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <title>OhMyFood</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <script src="https://kit.fontawesome.com/efe98d0133.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
-
+            <img id="logo" src="images/logo/logo.png" alt="logo"/>
         </header>
         <main>
+            <!-- Présentation -->
+            <section id="intro">
+                <div id="localisation"><i class="fas fa-map-marker-alt"></i><span>Paris, Belleville</span></div>
+                <div id="">
+                    <h3>Réservez le menu qui vous convient</h3>
+                    <p>Découvrez les restaurants d'exception, selectionnés par nos soins</p>
+                    <span><a href="#">Explorez nos restaurants</a></span>
+                </div>
+            </section>
 
+            <!-- Fonctionnement du site -->
+            <section id="fonction">
+                <h3>Fonctionnement</h3>
+                <div><span class="num">1</span><span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</span></div>
+                <div><span class="num">2</span><span><i class="fas fa-list-ul"></i>Composez votre menu</span></div>
+                <div><span class="num">3</span><span><i class="fas fa-store"></i>Dégustez au restaurant</span></div>
+            </section>
+
+            <!-- Menus des restaurants -->
+            <section id="menus">
+                <h3>Restaurants</h3>
+                <div id="menu1">
+                    <figure>
+                        <img src="images/menus/la_palette_du_gout.jpg" alt="Menu La palette du goût" />
+                        <figcaption>
+                            <div>
+                                <p class="nom_resto">La palette du goût</p>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <span class="fav"><button><i class="far fa-heart"></i></button></span>
+                        </figcaption>
+                    </figure>
+                    <span class="new">Nouveau</span>
+                </div>
+                <div id="menu2">
+                    <figure>
+                        <img src="images/menus/la_note_enchantee.jpg" alt="Menu La note enchantée" />
+                        <figcaption>
+                            <div>
+                                <p class="nom_resto">La note enchantée</p>
+                                <p>Charonne</p>
+                            </div>
+                            <span class="fav"><button><i class="far fa-heart"></i></button></span>
+                        </figcaption>
+                    </figure>
+                    <span class="new">Nouveau</span>
+                </div>
+                <div id="menu3">
+                    <figure>
+                        <img src="images/menus/a_la_francaise.jpg" alt="Menu À la française" />
+                        <figcaption>
+                            <div>
+                                <p class="nom_resto">À la française</p>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <span class="fav"><button><i class="far fa-heart"></i></button></span>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div id="menu4">
+                    <figure>
+                        <img src="images/menus/le_delice_des_sens.jpg" alt="Menu Le délice des sens" />
+                        <figcaption>
+                            <div>
+                                <p class="nom_resto">Le délice des sens</p>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <span class="fav"><button><i class="far fa-heart"></i></button></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
         </main>
-        <footer>
-            
+        <footer style="background-color: #353535;">
+            <div>
+                <h4>ohmyfood</h4>
+                <ul>
+                    <li><i class="fas fa-utensils" style="color: white;"></i>Proposer un restaurant</li>
+                    <li><i class="fas fa-handshake" style="color: white;"></i>Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li><a href="mailto:email@example.com">Contact</a></li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
