@@ -10,7 +10,7 @@ main{
     margin: 0; padding: 0;
 }
 
-.title-menu, footer h3{
+.title-menu h1, footer h3{
     font-family: 'Shrikhand', cursive;
 }
 
@@ -23,7 +23,7 @@ header{
     text-align: center;
 }
 
-#logo{
+#logo img{
     width: 40%; padding: 20px 0 10px 0;
 }
 
