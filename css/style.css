@@ -2,12 +2,16 @@ html{
     margin: 0; padding: 0;
 }
 
-body{
-    margin: 0; font-family: 'Roboto', sans-serif;
+body{ 
+    font-family: 'Roboto', sans-serif; margin: 0;
 }
 
 main{
     margin: 0; padding: 0;
+}
+
+.title-menu, footer h3{
+    font-family: 'Shrikhand', cursive;
 }
 
 a{
@@ -104,16 +108,16 @@ figcaption{
 }
 
 footer{
-    background-color: #353535; color: white; width: 100%; display: flex; flex-direction: column;
+    background-color: #353535; color: white; display: flex; flex-direction: column; justify-content: center;
     align-items: center; padding: 20px 0;
 }
 
 footer div{
-    width: 90%; 
+    width: 90%; margin: auto; padding: 0;
 }
 
-footer h4{
-    margin: 0;
+footer h3{
+    margin: 0; padding-bottom: 12px;
 }
 
 footer ul{
@@ -121,9 +125,21 @@ footer ul{
 }
 
 footer li{
-    list-style: none;
+    list-style: none; margin-bottom: 8px; display: flex; align-items: center;
 }
 
 footer i{
     margin-right: 10px; font-size: 10px;
+}
+
+.icone-footer{
+    width: 24px;
+}
+
+.icone-footer i{
+    font-size: 13px;
+}
+
+.icone-footer--turn i{
+    rotate: -40deg; font-size: 12px;
 }
