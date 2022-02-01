@@ -20,11 +20,11 @@ a{
 
 /* Header */
 header{
-    text-align: center;
+    text-align: center; background: white;
 }
 
 #logo img{
-    width: 40%; padding: 20px 0 10px 0;
+    width: 40%; margin: 20px 0 10px 0;
 }
 
 /* Main */
