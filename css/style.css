@@ -4,6 +4,7 @@ html{
 
 body{ 
     font-family: 'Roboto', sans-serif; margin: 0;
+    box-sizing: border-box;
 }
 
 main{
@@ -20,7 +21,7 @@ a{
 
 /* Header */
 header{
-    text-align: center; background: white;
+    text-align: center; background: white;  box-sizing: border-box;
 }
 
 #logo img{
