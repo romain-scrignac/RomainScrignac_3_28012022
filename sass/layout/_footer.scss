@@ -1,0 +1,39 @@
+/* Footer */
+footer{
+    background-color: #353535; color: white; display: flex; flex-direction: column; justify-content: center;
+    align-items: center; padding: 20px 0;
+
+    div{
+        width: 90%; margin: auto; padding: 0;
+    }
+
+    h3{
+        margin: 0; padding-bottom: 12px;
+    }
+
+    ul{
+        margin: 0; padding: 0;
+    }
+
+    li{
+        list-style: none; margin-bottom: 8px; display: flex; align-items: center;
+
+        .icone-footer{
+            width: 24px;
+
+            i{
+                font-size: 13px;
+            }
+
+            &--turn{
+                i{
+                    rotate: -40deg; font-size: 12px;
+                }
+            }
+        }
+    }
+
+    i{
+        margin-right: 10px; font-size: 10px;
+    }
+}
