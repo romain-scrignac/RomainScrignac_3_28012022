@@ -15,8 +15,9 @@ main{
     font-family: 'Shrikhand', cursive;
 }
 
-a{
-    text-decoration: none; color: white;
+#intro a, footer a{
+
+    color: white; text-decoration: none;
 }
 
 /* Header */
@@ -75,17 +76,21 @@ section{
     padding-bottom: 30px; background-color: #F2F2F2;
 }
 
+.lien-resto{
+    width: 90%; text-decoration: none; color: black;
+}
+
 #menus h3{
-    width: 80%;
+    width: 90%;
 }
 
 .menu{
-    width: 90%; display: flex; justify-content: center; margin: 0; position: relative; margin-bottom: 20px;
+    width: 100%; display: flex; justify-content: center; margin: 0; position: relative; margin-bottom: 20px;
 }
 
-.new{
-    position: absolute; right: 15px; top: 15px;
-    background-color: #99E2D0; padding: 7px 15px; border-radius: 2px;
+.menu .new{
+    position: absolute; right: 9%; top: 5%; padding: 7px 15px;
+    background-color: #99E2D0; border-radius: 2px;
 }
 
 figure{
