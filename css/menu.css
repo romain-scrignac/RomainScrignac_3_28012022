@@ -61,40 +61,54 @@ hr{
 }
 
 .choix__nom, .choix__compo{
-   width: 80%;  display: inline-block; overflow-x: hidden; text-overflow: ellipsis;
+    display: inline-block; overflow-x: hidden; text-overflow: ellipsis;
 }
 
 .choix__nom{
-    font-weight: bold; font-size: 20px;
+    font-weight: bold; font-size: 20px; width: 90%; transition: width .5s;
 }
 
 .choix__compo{
-    margin-top: 7px;
+    margin-top: 7px; width: 80%; transition: width .5s;
 }
 
 .choix__prix{
-    position: absolute; right: 5%; bottom: 15%; font-weight: bold;
+    position: absolute; width: 15%; right: 0; bottom: 15%; font-weight: bold; display: flex;
+    transition: width .5s;
 }
 
 .choix__select{
-    position: absolute; display: none; justify-content: center; align-items: center;
-    right: 5%; height: 100%; top: 0; right: 0; width: 15%; background-color: #99E2D0;
+    position: absolute; display: flex; justify-content: center; align-items: center;
+    width: 0; height: 100%; top: 0; right: 0; background-color: #99E2D0;
+    transition: width .5s;
 }
 
-.choix:hover > .choix__nom, .choix__compo{
-    width: 60%;
- }
+.choix__select i{
+    font-size: 23px; color: white; transition: transform 0.5s;
+}
 
-.choix:hover > .choix__select{
-   display: flex;
+.choix:hover{
+    cursor: pointer;
+}
+
+.choix:hover > .choix__nom{
+    width: 75%;
+}
+
+.choix:hover > .choix__compo{
+    width: 65%;
 }
 
 .choix:hover > .choix__prix{
-    right: 20%;
- }
+    width: 25%;
+}
 
-.choix__select i{
-    font-size: 23px; color: white;
+.choix:hover > .choix__select{
+    width: 15%;
+}
+
+.choix:hover > .choix__select i{
+    transform: rotate(360deg);
 }
 
 /* Bouton de commande */
