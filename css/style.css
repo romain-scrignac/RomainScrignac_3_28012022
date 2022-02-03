@@ -98,7 +98,7 @@ section{
 }
 
 .fonction__txt{
-    display: inline-block; overflow-x: hidden; text-overflow: ellipsis "..."; font-weight: bold;
+    display: inline-block; overflow-x: hidden; text-overflow: ellipsis; font-weight: bold;
 }
 
 .fonction__icon--grey{
@@ -196,5 +196,5 @@ footer i{
 }
 
 .icone-footer--turn i{
-    rotate: -40deg; font-size: 12px;
+    transform: rotateZ(-40deg); font-size: 12px;
 }

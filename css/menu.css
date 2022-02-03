@@ -21,7 +21,7 @@
 
 /* Menus */
 .big-section-menu{
-    padding: 30px 5% 50px 5%; background: linear-gradient(#F2F2F2, #e3e3e3); border-radius: 3em 3em 0 0;
+    padding: 30px 5%; background: linear-gradient(#F2F2F2, #e3e3e3); border-radius: 3em 3em 0 0;
     margin-top: 230px;
 }
 
@@ -40,12 +40,14 @@
 
 .menu{
     width: 100%; height: 100%; display: flex; flex-direction: column; margin: 0;
-    box-sizing: border-box;
+}
+
+.menu a{
+    width: 100%; text-decoration: none; color: unset;
 }
 
 .menu h3{
-    width: 100%; font-weight: unset; border-bottom-width: 2px solid #99E2D0;
-    margin-bottom: 0;
+    width: 100%; font-weight: unset; margin-bottom: 0;
 }
 
 hr{
@@ -54,12 +56,12 @@ hr{
 
 .choix{
     width: 100%; display: flex; flex-direction: column; margin: 10px 0; padding: 3%;
-    background: white; border-radius: .7em;  box-shadow: 1px 1px 10px #aaa;
-    position: relative; overflow-x: hidden; white-space: nowrap;  box-sizing: border-box;
+    background: white; border-radius: 15px;  box-shadow: 1px 1px 10px #aaa;
+    position: relative; overflow-x: hidden; white-space: nowrap;
 }
 
 .choix__nom, .choix__compo{
-   width:80%;  display: inline-block; overflow-x: hidden; text-overflow: ellipsis "...";
+   width: 80%;  display: inline-block; overflow-x: hidden; text-overflow: ellipsis;
 }
 
 .choix__nom{
@@ -74,12 +76,33 @@ hr{
     position: absolute; right: 5%; bottom: 15%; font-weight: bold;
 }
 
+.choix__select{
+    position: absolute; display: none; justify-content: center; align-items: center;
+    right: 5%; height: 100%; top: 0; right: 0; width: 15%; background-color: #99E2D0;
+}
+
+.choix:hover > .choix__nom, .choix__compo{
+    width: 60%;
+ }
+
+.choix:hover > .choix__select{
+   display: flex;
+}
+
+.choix:hover > .choix__prix{
+    right: 20%;
+ }
+
+.choix__select i{
+    font-size: 23px; color: white;
+}
+
 /* Bouton de commande */
 .btn-order{
-    margin-top: 30px;
+    margin: 50px 0;
 }
 
 .btn-order a{
-    padding: 10px 30px; font-weight: bold; font-size: 14px; color: white;
+    padding: 15px 50px; font-weight: bold; font-size: 14px; color: white;
     background-image: linear-gradient(#FF79DA, #ab5ddb); border-radius: 30px;
 }
