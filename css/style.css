@@ -158,12 +158,12 @@ figcaption{
 }
 
 .fav{
-    position: relative;
-    width: 30px; height: 30px; overflow: hidden;
+    position: relative; margin-right: 20px; padding: 0;
+    width: 24px; height: 24px; overflow: hidden;
 }
 
 .fav-after, .fav-before{
-    position: absolute;
+    position: absolute; right: 0; top: 0%;
     font-size: 20px;
 }
 
@@ -175,6 +175,12 @@ figcaption{
     display: inline-block;
     transform: scale(0);
     transition: all 0.6s ease-in;
+    background-image: linear-gradient(30deg, #FF79DA, #9356DC);
+    background-clip: text; color: transparent;
+}
+
+.fav:hover{
+    cursor: pointer;
 }
 
 .fav:hover > .fav-before{
@@ -183,8 +189,6 @@ figcaption{
 }
 
 .fav:hover > .fav-after{
-    background-clip: text; color: transparent;
-    background-image: linear-gradient(30deg, #FF79DA, #9356DC);
     transform: scale(1);
 }
 

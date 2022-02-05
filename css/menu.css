@@ -31,11 +31,7 @@
 }
 
 .title-menu h1{
-    font-size: 26px; margin: 10px 0;
-}
-
-.title-menu i{
-    font-size: 24px; margin-right: 20px;
+    font-size: 28px; margin: 10px 0;
 }
 
 .menu{
@@ -73,7 +69,7 @@ hr{
 }
 
 .choix__prix{
-    position: absolute; width: 15%; right: 0; bottom: 15%; font-weight: bold; display: flex;
+    position: absolute; width: 12%; right: 0; bottom: 15%; font-weight: bold; display: flex;
     transition: width .5s;
 }
 
@@ -100,7 +96,7 @@ hr{
 }
 
 .choix:hover > .choix__prix{
-    width: 25%;
+    width: 27%;
 }
 
 .choix:hover > .choix__select{
