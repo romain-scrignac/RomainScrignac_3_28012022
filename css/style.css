@@ -67,18 +67,18 @@ section{
     width: 80%; text-align: center; margin-top: 0;
 }
 
-#intro span{
+.btn-explore{
     margin: 20px 0;
 }
 
-#intro a{
+.btn-explore a{
     padding: 14px 20px; font-weight: bold; font-size: 14px; font-weight: normal; color: white;
     background-image: linear-gradient(175deg, #FF79DA, #9356DC); border-radius: 30px;
-    box-shadow: 1px 3px 10px #a1a1a1; transition: all 0.4s;
+    box-shadow: 1px 2px 8px #787878; transition: all 0.4s;
 }
 
-#intro a:hover{
-    box-shadow: 1px 4px 8px #787878; opacity: 0.9;
+.btn-explore a:hover{
+    box-shadow: 2px 5px 8px #787878; opacity: 0.9;
 }
 
     /* Section fonctionnement */
@@ -91,8 +91,8 @@ section{
 }
 
 .fonction{
-    background: #F2F2F2; padding: 20px 0; width: 85%; position: relative;
-    margin: 12px 0; border-radius: 20px; box-shadow: 1px 2px 10px #aaa;
+    background: #F2F2F2; padding: 20px 0; width: 87%; position: relative;
+    margin: 12px 5% 12px 8%; border-radius: 20px; box-shadow: 1px 2px 10px #aaa;
     white-space: nowrap; display: flex; align-items: center;
 }
 
@@ -122,25 +122,25 @@ section{
 }
 
     /* Section menus */
-#menus{
+#liste-restos{
     padding: 40px 0; background-color: #F2F2F2;
 }
 
-#menus h2{
+#liste-restos h2{
     width: 90%; margin-top: 0;
 }
 
-.menu{
+.resto{
     width: 100%; display: flex; justify-content: center; margin: 0; position: relative; margin-bottom: 20px;
 }
 
-.lien-resto{
-    width: 90%; text-decoration: none; color: unset;
-}
-
-.menu .new{
+.new-resto{
     position: absolute; right: 9%; top: 5%; padding: 7px 15px;
     background-color: #99E2D0; border-radius: 2px;
+}
+
+.lien-resto{
+    width: 90%; text-decoration: none; color: unset; color: black;
 }
 
 figure{
@@ -157,14 +157,33 @@ figcaption{
     padding: 0 15px; position: relative;
 }
 
+.nom-resto{
+    font-weight: bold; margin-bottom: 0;
+}
+
+.lieu-resto{
+    margin-top: 5px;
+}
+
+/* bouton favori */
 .fav{
-    position: relative; margin-right: 20px; padding: 0;
     width: 30px; height: 30px; overflow: hidden;
 }
 
+.fav--index{
+    position: absolute; bottom: 9%; right: 12%;
+}
+
+.fav--menu{
+    position: relative; margin-right: 5%;
+}
+
 .fav-after, .fav-before{
-    position: absolute; right: 2px; top: 0px;
-    font-size: 26px;
+    position: absolute; width: 100%; height: 100%;
+}
+
+.fav i{
+    font-size: 26px; margin: 2px;
 }
 
 .fav-before{
@@ -177,6 +196,7 @@ figcaption{
     transition: all 0.5s ease-in;
     background-image: linear-gradient(30deg, #FF79DA, #9356DC);
     background-clip: text; color: transparent;
+    -webkit-background-clip: text; color: transparent;
 }
 
 .fav:hover{
@@ -190,18 +210,6 @@ figcaption{
 
 .fav:hover > .fav-after{
     transform: scale(1);
-}
-
-.nom_resto, .lieu_resto{
-    color: black;
-}
-
-.nom_resto{
-    font-weight: bold; margin-bottom: 0;
-}
-
-.lieu_resto{
-    margin-top: 5px;
 }
 
 /* Footer */
