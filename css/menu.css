@@ -121,46 +121,78 @@ hr{
 
 
 /* Animations des menus */
+.menu{
+    animation: load-menu 0.7s ease-in-out;
+}
+
 .order1{
-    animation: choix2 0.5s ease-in-out;
+    animation: choix1 0.9s ease-in-out;
 }
 
 .order2{
-    animation: choix2 1s ease-in-out;
+    animation: choix2 1.1s ease-in-out;
 }
 
 .order3{
-    animation: choix3 1.5s ease-in-out;
+    animation: choix3 1.3s ease-in-out;
+}
+
+.order4{
+    animation: choix4 1.5s ease-in-out;
+}
+
+@keyframes load-menu{
+    from{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to{
+        opacity: 1;
+        transform: scaleY(1);
+    }
 }
 
 @keyframes choix1{
-    from{
-        transform: translateY(-20%);
+    0%, 70%{
+        opacity: 0;
+        transform: translateY(20%);
     }
-    to{
+    
+    100%{
         opacity: 1;
         transform: translateY(0);
     }
 }
 
 @keyframes choix2{
-    from{
+    0%, 70%{
         opacity: 0;
-        transform: translateY(-20%);
-     }
-     to{
+        transform: translateY(20%);
+    }
+    100%{
         opacity: 1;
         transform: translateY(0);
-     }
+    }
 }
 
 @keyframes choix3{
-    from{
+    0%, 70%{
         opacity: 0;
-        transform: translateY(-20%);
-     }
-     to{
+        transform: translateY(20%);
+    }
+    100%{
         opacity: 1;
         transform: translateY(0);
-     }
+    }
+}
+
+@keyframes choix4{
+    0%, 70%{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
