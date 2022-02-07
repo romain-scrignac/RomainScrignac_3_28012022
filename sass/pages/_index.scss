@@ -1,3 +1,89 @@
+/* Animation de chargement */
+.index{
+    animation: progress-page 3.5s ease-in-out;
+}
+
+@keyframes progress-page{
+    0%, 80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.loading{
+    width: 100%; display: flex; justify-content: center;
+    .progress{
+        position: absolute;
+        width: 350px; height: 17px;
+        margin: 300px auto;
+        border: 2px solid $primary;
+        border-radius: 1em;
+        display: flex; justify-content: center;
+        opacity: 0;
+        animation: progress-div 3s;
+        &__bar{
+            position: relative; 
+            width: 100%; height: 100%;
+            background-image: linear-gradient(30deg, $secondary, $primary, $tertiary);
+            border-radius: 3em;
+            animation: progress-bar 2.5s ease-in-out 0.15s;
+            transform-origin: 0% 50%;
+            opacity: 0;
+        }
+        &__txt{
+            position: absolute;
+            display: inline-block;
+            margin-top: 55px;
+            animation: progress-txt 1.8s ease-out;
+        }
+    }
+}
+
+@keyframes progress-div{
+    0%, 70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes progress-bar{
+    0%{
+        opacity: 1;
+        transform: scaleX(0);
+    }
+    15%{
+        transform: scaleX(0.15);
+    }
+    30%{
+        transform: scaleX(0.3);
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes progress-txt{
+    0%{
+        transform: rotate(0) scale(0);
+        opacity: 0;
+    }
+    60%{
+        transform: rotate(360deg) scale(0.6);
+    }
+    100%{
+        transform: rotate(360deg) scale(1);
+        opacity: 1;
+    }
+}
+
 /* Section présentation */
 #localisation{
     width: 100%; padding: 15px 0; background-color: #e5e5e5;

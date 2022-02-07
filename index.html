@@ -9,13 +9,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <script src="https://kit.fontawesome.com/efe98d0133.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="public/css/style.css">
+        <link rel="stylesheet" href="public/css/prefixed/style.css">
     </head>
     <body>
-        <header>
+        <div class="loading">
+            <div class="progress">
+                <div class="progress__bar"></div>
+                <span class="progress__txt"><img src="images/logo/logo.svg" /></span>
+            </div>
+        </div>
+        <header class="index">
             <span id="logo"><img src="images/logo/logo.png" alt="logo"/></span>
         </header>
-        <main>
+        <main class="index">
             <!-- Présentation -->
             <section>
                 <div id="localisation">
@@ -124,7 +130,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="index">
             <div>
                 <h3>ohmyfood</h3>
                 <ul>
