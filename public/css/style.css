@@ -123,6 +123,17 @@ a {
   margin: 2px;
 }
 
+/* Bouton retour */
+#btn-back {
+  position: absolute;
+  left: 5%;
+  margin-bottom: -10px;
+  font-size: 22px;
+}
+#btn-back i {
+  color: black;
+}
+
 /* Header */
 header {
   display: flex;

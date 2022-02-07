@@ -72,3 +72,11 @@
         font-size: 26px; margin: 2px;
     }
 }
+
+/* Bouton retour */
+#btn-back{
+    position: absolute; left: 5%; margin-bottom: -10px; font-size: 22px;
+    i{
+        color: black;
+    }
+}
