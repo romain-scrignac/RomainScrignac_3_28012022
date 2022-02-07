@@ -191,9 +191,9 @@ footer div ul li a {
   color: white;
 }
 
-/* Animation de chargement */
+/* Chargement de l'accueil */
 .index {
-  animation: progress-page 3.5s ease-in-out;
+  animation: progress-page 3.8s ease-in-out;
 }
 
 @keyframes progress-page {
@@ -204,6 +204,7 @@ footer div ul li a {
     opacity: 1;
   }
 }
+/* Animation de chargement */
 .loading {
   width: 100%;
   display: flex;
@@ -211,7 +212,7 @@ footer div ul li a {
 }
 .loading .progress {
   position: absolute;
-  width: 350px;
+  width: 70%;
   height: 17px;
   margin: 300px auto;
   padding: 0;
