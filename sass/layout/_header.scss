@@ -1,8 +1,9 @@
 /* Header */
 header{
-    text-align: center; background: white;  box-sizing: border-box;
+    display: flex; justify-content: center; align-items: center;
+    height: 70px; background: white;
 }
 
 #logo img{
-    width: 40%; margin: 20px 0 10px 0;
+    height: 30px; margin-bottom: -15px;
 }

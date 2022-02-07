@@ -1,0 +1,74 @@
+/* bouton explorer */
+.btn-explore button{
+    padding: 14px 20px; font-weight: bold; font-size: 14px; font-weight: normal; color: white;
+    background-image: linear-gradient(175deg, $secondary, $primary); 
+    border: none; border-radius: 30px;
+    box-shadow: 1px 2px 8px $shadow;
+    transition: all 0.4s;
+}
+
+.btn-explore button:hover{
+    box-shadow: 2px 5px 8px $shadow;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* bouton commander */
+
+.btn-order{
+    margin: 50px 0;
+}
+
+.btn-order button{
+    padding: 14px 50px; font-weight: bold; font-size: 14px; font-weight: normal; color: white;
+    background-image: linear-gradient(175deg, $secondary, $primary); 
+    border: none; border-radius: 30px;
+    box-shadow: 1px 2px 8px $shadow;
+    transition: all 0.4s;
+}
+
+.btn-order button:hover{
+    box-shadow: 2px 5px 8px $shadow;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* bouton favori */
+.fav{
+    width: 30px; height: 30px; overflow: hidden;
+
+    &--index{
+        position: absolute; bottom: 9%; right: 12%;
+    }
+    &--menu{
+        position: relative; margin-right: 5%;
+    }
+    .fav-after, .fav-before{
+        width: 100%; height: 100%;
+        display: inline-block;
+    }
+    .fav-before{
+        transition: opacity 0.4s ease-in;
+    }
+    .fav-after{
+        position: absolute;
+        background-image: linear-gradient(30deg, $secondary, $primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transform: scale(0);
+        transition: all 0.4s ease-in;
+    }
+    &:hover{
+        cursor: pointer;
+        & > .fav-before{
+            opacity: 0;
+        }
+        & > .fav-after{
+            transform: scale(1);
+        }
+    }
+    i{
+        font-size: 26px; margin: 2px;
+    }
+}
