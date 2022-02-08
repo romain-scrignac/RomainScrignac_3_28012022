@@ -33,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-/* bouton explorer */
+/* boutons */
 .btn {
   font-weight: bold;
   font-size: 14px;
@@ -58,7 +58,7 @@ a {
   cursor: pointer;
 }
 
-/* bouton favori */
+/* icone favori */
 .fav {
   width: 30px;
   height: 30px;
