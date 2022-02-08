@@ -1,13 +1,13 @@
 @mixin tablet-only {
-  @media screen and (min-width: map-get($breakpoints, tablet)){
+  @media screen and (min-width: map-get($breakpoints-min, tablet)) and (max-width: map-get($breakpoints-max, tablet)){
       @content; // Permet d'éviter toutes les règles css ici
-                // "@include tablet-only;" dans le sélecteur de la partie css nécessaire
+                // "@include tablet-only" dans le sélecteur de la partie css nécessaire
                 // Et ajouter les règles css dans ce dernier.
   }
 }
 
 @mixin desktop-only {
-  @media screen and (min-width: map-get($breakpoints, desktop)){
+  @media screen and (min-width: map-get($breakpoints-min, desktop)){
     @content;
   }
 }

@@ -41,6 +41,12 @@
             animation: progress-img 3s ease-out;
             opacity: 0;
         }
+        @include tablet-only{
+            width: 50%;
+        }
+        @include desktop-only{
+            width: 30%;
+        }
     }
 }
 
@@ -120,10 +126,13 @@
     margin: 40px 0; padding: 0;
     h2{
         width: 90%; margin-top: 0;
+        @include tablet-only{
+            text-align: center;
+        }
     }
     .fonction{
-        background: $background; padding: 20px 0; width: 87%; position: relative;
-        margin: 12px 5% 12px 8%; border-radius: 20px; box-shadow: 1px 2px 10px $shadow;
+        background: $background; padding: 20px 0; width: 95%; position: relative;
+        margin: 12px 1% 12px 4%; border-radius: 20px; box-shadow: 1px 2px 10px $shadow;
         white-space: nowrap; display: flex; align-items: center;
         .fonction__num{
             position: absolute; left: -12px; background: $primary; font-size: 12px; color: white;
@@ -145,6 +154,24 @@
             display: inline-block; overflow-x: hidden; text-overflow: ellipsis; font-weight: bold;
         }
     }
+    .fonctions{
+        width: 90%;
+        @include tablet-only{
+            display: flex; flex-direction: column; align-items: center;
+            h2{
+                text-align: center;
+            }
+            .fonction{
+                width: 360px; margin: 0 0 15px 0;
+            }
+        }
+        @include desktop-only{
+            display: flex; flex-direction: unset; justify-content: space-around;
+            .fonction{
+                width: 30%; margin: 0;
+            }
+        }
+    }
 }
 
 /* Section restaurants */
@@ -152,34 +179,53 @@
     padding: 40px 0; background-color: $background;
     h2{
         width: 90%; margin-top: 0;
+        @include tablet-only{
+            text-align: center;
+        }
     }
-    .resto{
-        width: 100%; display: flex; justify-content: center;
-        position: relative; margin: 0; margin-bottom: 20px;
-        &__lien{
-            width: 90%; text-decoration: none; color: unset; color: black;
-            &--new{
-                position: absolute; right: 9%; top: 5%; padding: 7px 15px;
-                background-color: $tertiary; border-radius: 2px;
+    .restos{
+        width: 100%; display: flex; flex-direction: column; align-items: center;
+        @include desktop-only{
+            flex-wrap: wrap; flex-direction: unset;
+            width: 95%;
+        }
+        .resto{
+            width: 100%; display: flex; justify-content: center;
+            position: relative; margin: 0 0 20px 0;
+            @include tablet-only{
+                max-width: 700px; margin-bottom: 30px;
             }
-            figure{
-                width: 100%; display: flex; flex-direction: column; margin: 0;
-                box-shadow: 1px 2px 8px $shadow; border-radius: 15px;
-                transition: box-shadow 0.4s;
-                &:hover{
-                    box-shadow: 2px 5px 8px $shadow;
+            @include desktop-only{
+                width: 50%; margin-bottom: 50px;
+            }
+            &__lien{
+                width: 90%; color: black;
+                @include desktop-only{
+                    width: 90%;
                 }
-                img{
-                    height: 220px; width: auto; object-fit: cover; border-radius: 15px 15px 0 0;
+                &--new{
+                    position: absolute; right: 9%; top: 5%; padding: 7px 15px;
+                    background-color: $tertiary; border-radius: 2px;
                 }
-                figcaption{
-                    display: flex; justify-content: space-between; align-items: center;
-                    padding: 0 15px; position: relative;
-                    .nom-resto{
-                        font-weight: bold; margin-bottom: 0;
+                figure{
+                    width: 100%; display: flex; flex-direction: column; margin: 0;
+                    box-shadow: 1px 2px 8px $shadow; border-radius: 15px;
+                    transition: box-shadow 0.4s;
+                    &:hover{
+                        box-shadow: 2px 5px 8px $shadow;
                     }
-                    .lieu-resto{
-                        margin-top: 5px;
+                    img{
+                        height: 220px; width: auto; object-fit: cover; border-radius: 15px 15px 0 0;
+                    }
+                    figcaption{
+                        display: flex; justify-content: space-between; align-items: center;
+                        padding: 0 15px; position: relative;
+                        .nom-resto{
+                            font-weight: bold; margin-bottom: 0;
+                        }
+                        .lieu-resto{
+                            margin-top: 5px;
+                        }
                     }
                 }
             }

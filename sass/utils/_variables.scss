@@ -1,7 +1,6 @@
-$breakpoints: (
-  tablet: 600px,
-  desktop: 992px
-);
+$breakpoints-min: ( tablet: 600px, desktop: 992px );
+
+$breakpoints-max: ( tablet: 991px );
 
 $primary: #9356DC;
 $secondary: #FF79DA;
