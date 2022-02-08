@@ -34,11 +34,11 @@
             transform-origin: 0% 50%;
             opacity: 0;
         }
-        &__txt{
+        &__img{
             position: absolute;
             display: inline-block;
             margin-top: 350px;
-            animation: progress-txt 3s ease-out;
+            animation: progress-img 3s ease-out;
             opacity: 0;
         }
     }
@@ -73,7 +73,7 @@
     }
 }
 
-@keyframes progress-txt{
+@keyframes progress-img{
     0%{
         transform: rotate(0) scale(0);
         opacity: 0;
@@ -105,7 +105,7 @@
 }
 
 #intro{
-    display: flex; flex-direction: column; align-items: center; background-color: #F2F2F2;
+    display: flex; flex-direction: column; align-items: center; background-color: $background;
     padding: 10px 0 30px 0; width: 100%;
     h1{
         width: 70%; text-align: center; margin-bottom: 10px;
@@ -122,7 +122,7 @@
         width: 90%; margin-top: 0;
     }
     .fonction{
-        background: #F2F2F2; padding: 20px 0; width: 87%; position: relative;
+        background: $background; padding: 20px 0; width: 87%; position: relative;
         margin: 12px 5% 12px 8%; border-radius: 20px; box-shadow: 1px 2px 10px $shadow;
         white-space: nowrap; display: flex; align-items: center;
         .fonction__num{
@@ -149,7 +149,7 @@
 
 /* Section restaurants */
 #liste-restos{
-    padding: 40px 0; background-color: #F2F2F2;
+    padding: 40px 0; background-color: $background;
     h2{
         width: 90%; margin-top: 0;
     }
