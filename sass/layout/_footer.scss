@@ -5,6 +5,9 @@ footer{
     justify-content: center; align-items: center;
     div{
         width: 90%; padding: 0;
+        @include desktop-only{
+            width: 95%;
+        }
         h3{
             margin: 0; padding-bottom: 12px; font-weight: normal;
         }
@@ -12,7 +15,7 @@ footer{
             margin: 0; padding: 0;
             li{
                 list-style: none; margin-bottom: 8px; display: flex; align-items: center;
-                .icone-footer{
+                .icon-footer{
                     width: 24px;
                     i{
                         font-size: 13px; margin-right: 10px;
