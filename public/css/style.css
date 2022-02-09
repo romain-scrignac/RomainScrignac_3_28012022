@@ -525,8 +525,14 @@ footer div ul li a {
   width: 100%;
   height: 380px;
   position: absolute;
-  top: 0;
+  top: 70px;
   z-index: -2;
+}
+@media screen and (min-width: 992px) {
+  #photo-menu {
+    height: 480px;
+    top: 0;
+  }
 }
 #photo-menu img {
   width: 100%;
@@ -541,9 +547,14 @@ footer div ul li a {
   align-items: center;
   width: 100%;
   padding: 30px 0;
-  margin: 230px auto 0 auto;
+  margin: 300px auto 0 auto;
   background: #F2F2F2;
   border-radius: 3em 3em 0 0;
+}
+@media screen and (min-width: 992px) {
+  .liste-menus {
+    margin: 360px auto 0 auto;
+  }
 }
 .liste-menus .title-menu {
   display: flex;
@@ -561,7 +572,7 @@ footer div ul li a {
 @media screen and (min-width: 992px) {
   .liste-menus .title-menu {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 .liste-menus .title-menu h1 {
@@ -575,6 +586,7 @@ footer div ul li a {
   .liste-menus .menus {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
   }
 }
 .liste-menus .menu {

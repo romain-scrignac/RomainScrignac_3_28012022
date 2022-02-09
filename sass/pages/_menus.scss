@@ -1,18 +1,22 @@
 /* Illustration */
 #photo-menu{
-    width: 100%; height: 380px; position: absolute; top: 0; z-index : -2;
-
+    width: 100%; height: 380px; position: absolute; top: 70px; z-index : -2;
+    @include desktop-only{
+        height: 480px; top: 0;
+    }
     img{
-        width: 100%;  height: 100%; object-fit: cover;
+        width: 100%; height: 100%; object-fit: cover;
     }
 }
 
 /* Menus */
 .liste-menus{
     display: flex; flex-direction: column; align-items: center;
-    width: 100%; padding: 30px 0; margin: 230px auto 0 auto;
+    width: 100%; padding: 30px 0; margin: 300px auto 0 auto;
     background: $background; border-radius: 3em 3em 0 0;
-
+    @include desktop-only{
+        margin: 360px auto 0 auto;
+    }
     .title-menu{
         display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;
         width: 90%; position: relative;
@@ -20,7 +24,7 @@
             max-width: 650px;
         }
         @include desktop-only{
-            justify-content: center; margin-bottom: 50px;
+            justify-content: center; margin-bottom: 30px;
         }
         h1{
             font-size: 28px; margin: 10px 0;
@@ -29,7 +33,7 @@
     .menus{
         width: 100%;
         @include desktop-only{
-            display: flex; justify-content: space-around;
+            display: flex; justify-content: space-around; align-items: flex-start;
         }
     }
     .menu{
