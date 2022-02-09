@@ -294,19 +294,21 @@ footer div ul li a {
   padding: 15px 0;
   background-color: #e5e5e5;
   box-shadow: inset 0 3px 5px #cccccc;
+  text-align: center;
 }
 #localisation i {
-  margin: 0;
-  width: 30%;
-  text-align: right;
+  margin-right: 18px;
 }
 #localisation #search {
-  font-size: 16px;
-  width: 40%;
   border: none;
   background-color: #e5e5e5;
+  width: 150px;
+  margin: auto;
   color: black;
-  text-align: center;
+  font-size: 17px;
+}
+#localisation #search:focus {
+  outline: none;
 }
 
 #intro {
@@ -492,6 +494,16 @@ footer div ul li a {
   width: auto;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
+}
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  #liste-restos .restos .resto__lien figure img {
+    height: 280px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #liste-restos .restos .resto__lien figure img {
+    height: 280px;
+  }
 }
 #liste-restos .restos .resto__lien figure figcaption {
   display: flex;
