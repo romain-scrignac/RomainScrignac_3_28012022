@@ -128,6 +128,9 @@
 /* Section fonctionnement */
 #fonction-liste{
     margin: 40px 0; padding: 0;
+    @include desktop-only{
+        margin: 40px 0 60px 0;
+    }
     h2{
         width: 90%; margin-top: 0;
         @include tablet-only{
@@ -202,6 +205,15 @@
             @include desktop-only{
                 width: 50%; margin-bottom: 50px;
             }
+            .img{
+                height: 200px; border-radius: 15px 15px 0 0;
+                @include tablet-only{
+                    height: 230px;
+                }
+                @include desktop-only {
+                    height: 280px;
+                }
+            }
             &__lien{
                 width: 90%; color: black;
                 @include desktop-only{
@@ -217,15 +229,6 @@
                     transition: box-shadow 0.4s;
                     &:hover{
                         box-shadow: 2px 5px 8px $shadow;
-                    }
-                    img{
-                        height: 220px; width: auto; object-fit: cover; border-radius: 15px 15px 0 0;
-                        @include tablet-only{
-                            height: 280px;
-                        }
-                        @include desktop-only{
-                            height: 280px;
-                        }
                     }
                     figcaption{
                         display: flex; justify-content: space-between; align-items: center;

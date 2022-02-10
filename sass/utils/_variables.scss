@@ -1,6 +1,12 @@
 $breakpoints-min: ( tablet: 600px, desktop: 992px );
-
 $breakpoints-max: ( tablet: 991px );
+
+$baseUrls: (
+    1: "../../images/restaurants/la_palette_du_gout",
+    2: "../../images/restaurants/la_note_enchantee",
+    3: "../../images/restaurants/a_la_francaise",
+    4: "../../images/restaurants/le_delice_des_sens"
+);
 
 $primary: #9356DC;
 $secondary: #FF79DA;
