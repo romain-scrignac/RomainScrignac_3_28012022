@@ -20,6 +20,9 @@
 
     &--index{
         position: absolute; bottom: 9%; right: 12%;
+        @include desktop-only{
+            bottom: 7%;
+        }
     }
     &--menu{
         position: relative; margin-right: 5%;
