@@ -1,4 +1,4 @@
-/* Illustration */
+/* Illustration menus*/
 .img--menu{
     height: 380px; position: absolute; top: 60px; z-index : -2;
     @include tablet-only{
@@ -122,47 +122,4 @@
     }
 }
 
-/* Animations des menus */
-.menu{
-    animation: anim-menu 0.7s ease-in-out;
-}
-
-.order1{
-    animation: anim-choix 0.9s ease-in-out;
-}
-
-.order2{
-    animation: anim-choix 1.1s ease-in-out;
-}
-
-.order3{
-    animation: anim-choix 1.3s ease-in-out;
-}
-
-.order4{
-    animation: anim-choix 1.5s ease-in-out;
-}
-
-@keyframes anim-menu{
-    from{
-        opacity: 0;
-        transform: scaleY(0);
-    }
-    to{
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-
-@keyframes anim-choix{
-    0%, 70%{
-        opacity: 0;
-        transform: translateY(20%);
-    }
-    
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 

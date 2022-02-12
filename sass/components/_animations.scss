@@ -1,0 +1,142 @@
+/* Chargement de l'accueil */
+.index{
+    animation: progress-page 3.8s ease-in-out;
+}
+
+@keyframes progress-page{
+    0%, 80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Loading spinner */
+.loading{
+    width: 100%; display: flex; justify-content: center;
+    .progress{
+        position: absolute;
+        width: 70%; height: 17px;
+        margin: 300px auto; padding: 0;
+        border: 2px solid $primary;
+        border-radius: 0.5em;
+        display: flex; justify-content: center;
+        opacity: 0;
+        animation: progress-div 3s;
+        overflow: hidden;
+        &__bar{
+            position: relative; 
+            width: 100%; height: 100%;
+            background-image: linear-gradient(30deg, $tertiary, $secondary, $primary);
+            border-radius: 1em;
+            animation: progress-bar 3s ease-in-out;
+            transform-origin: 0% 50%;
+            opacity: 0;
+        }
+        &__img{
+            position: absolute;
+            display: inline-block;
+            margin-top: 350px;
+            animation: progress-img 3s ease-out;
+            opacity: 0;
+        }
+        @include tablet-only{
+            width: 50%;
+        }
+        @include desktop-only{
+            width: 30%;
+        }
+    }
+}
+
+@keyframes progress-div{
+    0%, 70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+@keyframes progress-bar{
+    0%{
+        opacity: 1;
+        transform: translateX(-250%);
+    }
+    15%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes progress-img{
+    0%{
+        transform: rotate(0) scale(0);
+        opacity: 0;
+    }
+    40%{
+        transform: rotate(360deg) scale(0.5);
+    }
+    80%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+/* Animations des menus */
+.menu{
+    animation: anim-menu 0.7s ease-in-out;
+}
+
+.order1{
+    animation: anim-choix 0.9s ease-in-out;
+}
+
+.order2{
+    animation: anim-choix 1.1s ease-in-out;
+}
+
+.order3{
+    animation: anim-choix 1.3s ease-in-out;
+}
+
+.order4{
+    animation: anim-choix 1.5s ease-in-out;
+}
+
+@keyframes anim-menu{
+    from{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes anim-choix{
+    0%, 70%{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
